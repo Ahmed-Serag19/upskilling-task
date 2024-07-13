@@ -10,5 +10,5 @@ import { SectionButtonComponent } from '../../components/section-button/section-
   styleUrl: './about-us.component.css',
 })
 export class AboutUsComponent {
-  aboutUsSectionImage = 'assets/images/about-us-section.png';
+  aboutUsSectionImage = 'assets/images/about-us-section.jpg';
 }

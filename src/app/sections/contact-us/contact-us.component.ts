@@ -57,7 +57,7 @@ export class ContactUsComponent {
       );
     } else {
       this.showError = true;
-      this.contactForm.markAllAsTouched(); // Mark all controls as touched to trigger validation messages
+      this.contactForm.markAllAsTouched();
       setTimeout(() => (this.showError = false), 3000);
     }
   }

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ContactService {
-  private apiUrl = 'http://upskilling-egypt.com:3001/contact';
+  private apiUrl = '/api/contact';
 
   constructor(private http: HttpClient) {}
 

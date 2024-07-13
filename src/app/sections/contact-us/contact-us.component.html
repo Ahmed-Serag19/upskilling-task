@@ -1,0 +1,112 @@
+<section
+  class="py-16 h-screen bg-gray-100 flex flex-col items-center justify-around gap-16"
+>
+  <app-section-header label="Contact Us"></app-section-header>
+  <div class="flex flex-col md:flex-row justify-center gap-12">
+    <div class="flex justify-center items-center w-full">
+      <form
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+        class="space-y-4 min-w-96"
+      >
+        <div>
+          <input
+            type="text"
+            formControlName="name"
+            placeholder="Name"
+            class="p-4 w-full rounded-full bg-blue-200 placeholder-black focus:outline-none"
+          />
+          <div
+            *ngIf="
+              contactForm.get('name')?.touched &&
+              contactForm.get('name')?.invalid
+            "
+            class="text-red-600"
+          >
+            <div *ngIf="contactForm.get('name')?.errors?.['required']">
+              Name is required.
+            </div>
+            <div *ngIf="contactForm.get('name')?.errors?.['pattern']">
+              Name must be 1-30 letters only.
+            </div>
+          </div>
+        </div>
+        <div>
+          <input
+            type="email"
+            formControlName="email"
+            placeholder="Email"
+            class="w-full p-4 rounded-full bg-blue-200 placeholder-black focus:outline-none"
+          />
+          <div
+            *ngIf="
+              contactForm.get('email')?.touched &&
+              contactForm.get('email')?.invalid
+            "
+            class="text-red-600"
+          >
+            <div *ngIf="contactForm.get('email')?.errors?.['required']">
+              Email is required.
+            </div>
+            <div *ngIf="contactForm.get('email')?.errors?.['email']">
+              Invalid email format.
+            </div>
+            <div *ngIf="contactForm.get('email')?.errors?.['maxlength']">
+              Email must be less than 30 characters.
+            </div>
+          </div>
+        </div>
+        <div>
+          <input
+            type="text"
+            formControlName="phone"
+            placeholder="Phone"
+            class="w-full p-4 rounded-full bg-blue-200 placeholder-black focus:outline-none"
+          />
+          <div
+            *ngIf="
+              contactForm.get('phone')?.touched &&
+              contactForm.get('phone')?.invalid
+            "
+            class="text-red-600"
+          >
+            <div *ngIf="contactForm.get('phone')?.errors?.['required']">
+              Phone number is required.
+            </div>
+            <div *ngIf="contactForm.get('phone')?.errors?.['pattern']">
+              Invalid Egyptian phone number.
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="py-3 px-14 rounded-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition"
+          >
+            Send
+          </button>
+        </div>
+        <div *ngIf="showError" class="text-red-600">
+          Please fill in all fields correctly.
+        </div>
+        <div *ngIf="showSuccess" class="text-green-600">
+          Submitted successfully!
+        </div>
+      </form>
+    </div>
+    <div
+      class="w-full md:w-1/2 flex flex-col justify-center items-start space-y-4"
+    >
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-envelope text-blue-600"></i>
+        <a href="mailto:upskilling.eg@gmail.com"
+          >upskilling.eg1&#64;gmail.com</a
+        >
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-phone-alt text-blue-600"></i>
+        <a href="tel:+201154932137">+20 115 493 2137</a>
+      </div>
+    </div>
+  </div>
+</section>

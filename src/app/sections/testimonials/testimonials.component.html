@@ -1,0 +1,37 @@
+<section
+  class="testmonials py-16 bg-gray-200 h-screen flex flex-col items-center justify-center gap-16"
+>
+  <app-section-header label="Testimonials"></app-section-header>
+  <div class="container mx-auto">
+    <div class="tesimonials-container flex justify-center flex-wrap gap-12">
+      <div
+        *ngFor="let testimonial of testimonials"
+        class="tesimonial-container bg-white flex-basis-1/2 max-w-2xl rounded-3xl shadow-lg p-6 border flex justify-center border-blue-400"
+      >
+        <div class="flex-shrink-0">
+          <img
+            [src]="testimonial.image"
+            [alt]="testimonial.name"
+            class="w-20 h-20 rounded-full mr-4"
+          />
+        </div>
+        <div class="max-w-md testimonials-text">
+          <h3 class="text-xl font-bold pb-3">
+            {{ testimonial.name }}
+          </h3>
+          <p class="mb-4">{{ testimonial.text }}</p>
+          <div class="flex gap-x-3">
+            <i
+              *ngFor="let star of [].constructor(testimonial.rating)"
+              class="fas fa-star"
+            ></i>
+            <i
+              *ngFor="let star of [].constructor(5 - testimonial.rating)"
+              class="far fa-star"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

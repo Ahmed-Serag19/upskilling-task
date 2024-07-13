@@ -1,0 +1,32 @@
+<section class="hero">
+  <header class="flex gap-4 justify-center pt-32 pb-20">
+    <div class="logo w-18 pt-1">
+      <img [src]="logoPath" alt="recycle truck logo" class="logo-image" />
+    </div>
+    <div
+      class="logo-text flex flex-col"
+      [ngStyle]="{ color: 'var(--secondary-color)' }"
+    >
+      <h1 class="text-5xl tracking-wide">Round Rock</h1>
+      <p class="font-bold text-lg">Trush Hauling</p>
+    </div>
+  </header>
+  <div
+    class="flex flex-col items-center py-16"
+    [ngStyle]="{ color: '#4F4F4F' }"
+  >
+    <button
+      class="experts-btn text-white py-2 px-10 rounded-2xl mb-4 text-lg"
+      [ngStyle]="{ backgroundColor: 'var(--secondary-color)' }"
+    >
+      Experts
+    </button>
+    <h2 class="text-8xl lorem-header font-thin">Lorem</h2>
+    <h2 class="text-8xl font-extrabold">Lorem lorem</h2>
+    <p class="text-center max-w-lg pt-5 pb-5 font-semibold text-lg">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+    </p>
+    <app-section-button label="Help Me" color="primary"></app-section-button>
+  </div>
+</section>

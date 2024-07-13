@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  button {
+    font-size: 24px !important;
+    padding: 15px 35px !important;
+  }
+}
+@media (max-width: 320px) {
+  button {
+    font-size: 16px !important;
+    padding: 15px 25px !important;
+  }
+}
+@media (max-width: 768px) {
+  button {
+    font-size: 16px !important;
+    padding: 15px 35px !important;
+  }
+}

@@ -1,0 +1,54 @@
+.about-us {
+  background: url("../../../assets/images/about-us-bg.png");
+  position: relative;
+  padding: 30px;
+}
+.right-side-layer {
+  position: absolute;
+  background: url("../../../assets/images/about-us-layer.png");
+  background-size: cover;
+  height: 100%;
+  z-index: -500;
+  width: 65%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.btn-container {
+  position: absolute;
+  bottom: 100;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 555;
+}
+.btn-container button {
+  font-size: 55px !important;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 20px;
+    /* height: fit-content !important; */
+  }
+  .about-us p {
+    font-size: 16px !important;
+  }
+  .about-us h1 {
+    font-size: 42px;
+    padding-top: 10px;
+  }
+  .about-us img {
+    width: 400px;
+  }
+  .about-us div {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .btn-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 555;
+  }
+}

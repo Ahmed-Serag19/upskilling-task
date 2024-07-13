@@ -1,27 +1,63 @@
-# UpskillingTask
+# Upskilling Task - Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+## Introduction
 
-## Development server
+Welcome to my first Angular project! This project is a single-page application designed to demonstrate the fundamentals of Angular, including components, services, forms, and HTTP client integration.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Responsive design using Tailwind CSS
+- Reactive forms for user input
+- Integration with external API using Angular HttpClient
+- Modular and scalable project structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Structure
 
-## Build
+- **src/app**: Contains the main application components and services
+- **assets**: Contains images and other static assets
+- **styles.css**: Global styles for the application
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
 
-## Running unit tests
+- Angular
+- TypeScript
+- Tailwind CSS
+- RxJS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+To run this project locally, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
 
-## Further help
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. Navigate to the project directory:
+
+   ```sh
+   cd your-repo-name
+   ```
+
+3. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```sh
+   ng serve
+   ```
+
+5. Open your browser and navigate to `http://localhost:4200`.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to me:
+
+- Email: [ahmedmohamed.amin@hotmail.com](mailto:ahmedmohamed.amin@hotmail.com)
+
+Thank you for visiting my project!

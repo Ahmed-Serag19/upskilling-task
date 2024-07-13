@@ -1,0 +1,33 @@
+<div class="special-header">
+  <header class="section-header">
+    <h1 class="text-6xl font-extrabold">{{ label }}</h1>
+    <span
+      class="line"
+      [ngClass]="{
+        'top-left-contact': label === 'Contact Us',
+        'top-left': label !== 'Contact Us'
+      }"
+    ></span>
+    <span
+      class="line"
+      [ngClass]="{
+        'bottom-right-contact': label === 'Contact Us',
+        'bottom-right': label !== 'Contact Us'
+      }"
+    ></span>
+    <span
+      class="line"
+      [ngClass]="{
+        'top-right-contact': label === 'Contact Us',
+        'top-right': label !== 'Contact Us'
+      }"
+    ></span>
+    <span
+      class="line"
+      [ngClass]="{
+        'bottom-left-contact': label === 'Contact Us',
+        'bottom-left': label !== 'Contact Us'
+      }"
+    ></span>
+  </header>
+</div>

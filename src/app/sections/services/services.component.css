@@ -1,0 +1,33 @@
+.services-cards {
+  color: #324473;
+}
+@media (max-width: 1024px) {
+  .services {
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .services {
+    height: fit-content !important;
+    gap: 25px;
+    padding-top: 50px !important;
+  }
+  .services-cards {
+    flex-direction: column;
+    margin-top: 10px;
+    width: 300px;
+    gap: 25px;
+    padding: 5px;
+    justify-content: center !important;
+  }
+  .services-cards p {
+    font-size: 12px !important;
+  }
+  .services-cards h2 {
+    font-size: 16px !important;
+    margin-bottom: 5px !important;
+  }
+  .services-cards {
+    flex-direction: column;
+  }
+}

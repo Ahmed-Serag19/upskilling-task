@@ -19,22 +19,28 @@ input::placeholder {
 }
 @media (max-width: 425px) {
   .contact {
-    padding: 20px !important;
-    padding-top: 100px !important;
-    gap: 150px !important;
+    padding: 30px !important;
+    padding-top: 50px !important;
+    gap: 50px !important;
     justify-content: flex-start !important;
     align-items: center !important;
+    /* height: fit-content !important; */
+  }
+  .contact div {
+    width: 300px;
+    /* justify-content: center; */
+    padding: 5px 5px;
   }
   .contact-container {
-    gap: 32px;
+    gap: 22px;
     align-items: center !important;
   }
-  .form-container {
-    width: 200px !important;
-    padding: 20px;
-  }
+
   .form-container div {
-    width: 300px !important;
+    width: 200px !important;
+  }
+  .form-container input {
+    width: 200px !important;
   }
   .form-container form {
     padding: 20px;

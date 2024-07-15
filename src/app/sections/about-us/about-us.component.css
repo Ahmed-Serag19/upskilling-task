@@ -27,7 +27,7 @@
 
 @media (max-width: 1450px) {
   .btn-container {
-    bottom: 10px;
+    bottom: 70px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 50;
@@ -46,6 +46,11 @@
   }
 }
 @media (max-width: 768px) {
+  .btn-container {
+    bottom: 20px;
+    padding-top: 30px;
+  }
+
   .about-us {
     padding: 10px 20px;
     height: fit-content !important;

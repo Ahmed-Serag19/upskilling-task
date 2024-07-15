@@ -45,4 +45,7 @@ input::placeholder {
   .form-container form {
     padding: 20px;
   }
+  .min-w-96 {
+    min-width: 14rem /* 384px */;
+  }
 }

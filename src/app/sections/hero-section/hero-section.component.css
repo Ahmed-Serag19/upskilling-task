@@ -7,6 +7,9 @@
   position: relative;
   padding: 0 10px;
 }
+.logo-text p {
+  letter-spacing: 0.75rem;
+}
 @media (max-width: 1500px) {
   .hero {
     background-size: 2000px;

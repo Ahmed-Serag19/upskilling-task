@@ -31,13 +31,13 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Ahmed-Serag19/upskilling-task.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd your-repo-name
+   cd upskilling-task
    ```
 
 3. Install dependencies:

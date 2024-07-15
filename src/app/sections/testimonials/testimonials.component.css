@@ -4,21 +4,40 @@
 .testimonials-text p {
   color: #22366a;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .testmonials {
     height: fit-content;
     padding: 15px !important;
     padding-top: 50px;
   }
+}
+@media (max-width: 1024px) {
+  .testmonials {
+    height: fit-content;
+    padding: 35px 15px !important;
+    padding-top: 50px;
+  }
   .tesimonials-container {
     padding-top: 30px;
     gap: 30px;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   .tesimonial-container {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 425px) {
+  .tesimonials-container {
     flex-direction: column;
-    max-width: fit-content;
+  }
+  .tesimonial-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
   }
 }

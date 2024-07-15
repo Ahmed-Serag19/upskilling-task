@@ -1,9 +1,9 @@
 <section
-  class="services bg-slate-200 h-screen flex flex-col items-center gap-24 justify-center"
+  class="services bg-slate-200 h-screen flex flex-col items-center gap-16 justify-center"
 >
   <app-section-header label="Services"></app-section-header>
   <div class="services-cards flex items-center justify-center gap-10">
-    <div *ngFor="let service of services" class="max-w-xs bg-white rounded-3xl">
+    <div *ngFor="let service of services" class="max-w-xs bg-white">
       <img [src]="service.image" alt="{{ service.title }}" />
       <div class="card-text p-4">
         <h2 class="text-xl font-extrabold mb-2">{{ service.title }}</h2>

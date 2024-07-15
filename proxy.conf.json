@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "http://upskilling-egypt.com:3001/contact",
+    "target": "http://upskilling-egypt.com:3001",
     "secure": false,
     "changeOrigin": true,
     "pathRewrite": {
